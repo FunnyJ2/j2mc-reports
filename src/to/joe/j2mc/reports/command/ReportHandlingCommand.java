@@ -180,11 +180,11 @@ public class ReportHandlingCommand extends MasterCommand {
                 }
                 if (!(_reports.isEmpty())) {
                     StringBuilder msg = new StringBuilder();
+                    msg.append(ChatColor.DARK_PURPLE + "Closed all reports containing the keyword " + args[1] + ": ");
                     for (int id : _reports) {
                         this.plugin.Manager.closeReport(id, sender.getName(), reason);
                         msg.append(id + ", ");
                     }
-                    msg.append(ChatColor.DARK_PURPLE + "Closed all reports containing the keyword " + args[1] + ": ");
                     msg.setLength(msg.length() - 2);
                     sender.sendMessage(msg.toString());
                 } else {
