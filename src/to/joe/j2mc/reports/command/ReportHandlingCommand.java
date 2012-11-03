@@ -166,7 +166,7 @@ public class ReportHandlingCommand extends MasterCommand {
             if (action.equalsIgnoreCase("keyclose")) {
                 String reason = "Closed.";
                 if (args.length < 2) {
-                    sender.sendMessage(ChatColor.DARK_PURPLE + "Usage: /r keyclose <keyword> [usage]");
+                    sender.sendMessage(ChatColor.DARK_PURPLE + "Usage: /r keyclose <keyword> [reason]");
                     sender.sendMessage(ChatColor.DARK_PURPLE + "This will close all open reports containing the keyword specified");
                     return;
                 } else if (args.length > 2) {
