@@ -1,6 +1,7 @@
 name: Reports
 main: to.joe.j2mc.reports.J2MC_Reports
 version: 1.0
+depend: [Core]
 website: http://forums.joe.to
 author: J2 Minecraft Plugin Team
 description: Reports Module
